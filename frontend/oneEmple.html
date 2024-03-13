@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleado</title>
+</head>
+<body>
+    <h1>Empleado</h1>
+    <div id="empleado-info"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Llamamos a la función mostrarEmpleado al cargar la página
+        const params = new URLSearchParams(window.location.search);
+        mostrarEmpleado(params.get('clave'));
+    </script>
+</body>
+</html>
